@@ -33,37 +33,50 @@ OptiCrop is an AI-powered crop recommendation system that suggests the most suit
  📂 Project Structure   
 
         OptiCrop/
+OptiCrop/
 │
-├── app.py                      # Main Flask application
+├── app.py                      # Flask application
 ├── train_model.py              # Model training script
-├── requirements.txt            # Required Python packages
+├── requirements.txt            # Python dependencies
 ├── README.md                   # Project documentation
+├── .gitignore                  # Ignore unnecessary files
 │
 ├── data/
-│   └── Crop_recommendation.csv # Agricultural dataset
+│   └── Crop_recommendation.csv
 │
 ├── models/
-│   ├── crop_model.pkl          # Trained crop prediction model
-│   ├── kmeans_model.pkl        # K-Means clustering model
-│   ├── label_encoder.pkl       # Label encoder
-│   └── model_name.txt          # Model information
+│   ├── crop_model.pkl
+│   ├── kmeans_model.pkl
+│   ├── label_encoder.pkl
+│   └── model_name.txt
 │
 ├── notebooks/
-│   └── OptiCrop_Analysis.ipynb # Data analysis & EDA notebook
+│   └── OptiCrop_Analysis.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   ├── preprocess.py           # Data preprocessing functions
+│   ├── predictor.py            # Prediction functions
+│   ├── clustering.py           # K-Means clustering logic
+│   ├── utils.py                # Helper functions
+│   └── config.py               # Configuration paths
 │
 ├── templates/
-│   ├── index.html              # User input page
-│   └── result.html             # Prediction result page
+│   ├── index.html
+│   └── result.html
 │
 ├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
 │   └── images/
 │       ├── correlation_heatmap.png
 │       ├── crop_distribution.png
 │       └── temperature_rainfall.png
 │
-└── src/                        # Source files (currently empty)
-
-
+└── tests/
+    └── test_predictor.py       # Unit tests (optional)
 
 
  📊 Dataset
