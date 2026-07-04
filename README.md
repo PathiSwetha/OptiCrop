@@ -33,6 +33,7 @@ OptiCrop is an AI-powered crop recommendation system that suggests the most suit
  📂 Project Structure   
 
         OptiCrop/
+OptiCrop/
 │
 ├── app.py                      # Main Flask application
 ├── train_model.py              # Model training script
@@ -62,7 +63,6 @@ OptiCrop is an AI-powered crop recommendation system that suggests the most suit
 │       └── temperature_rainfall.png
 │
 └── src/                        # Source files (currently empty)
-
 
 
 
